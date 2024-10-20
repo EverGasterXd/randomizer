@@ -38,12 +38,11 @@ function activate(context) {
     }
     if (datosSolicitados.includes('correo')) {
       // Asegurarse de que nombre y apellidos existan para el correo
-      const nombreParaCorreo = persona.nombre || fake.person.firstName();
-      const apellidosParaCorreo = persona.apellidos || `${fake.person.lastName()} ${fake.person.lastName()}`;
-      persona.correo = `${nombreParaCorreo.toLowerCase()}.${apellidosParaCorreo.toLowerCase().replace(/ /g, '')}@${fake.internet.domainName()}`;
+      const nombreParaCorreo = persona.nombre;
+      persona.correo = `${fake.internet.email({firstName: `${nombreParaCorreo}`})}`;
     }
     if (datosSolicitados.includes('año_nacimiento')) {
-      persona.año_nacimiento = fake.date.birthdate({ min: 1950, max: 2005, mode: 'year' });
+      persona.año_nacimiento = fake.date.birthdate({ min: 1950, max: 2024, mode: 'year' });
     }
     if (datosSolicitados.includes('genero')) {
       persona.genero = fake.person.sex() === 'female' ? 'female' : 'male';
