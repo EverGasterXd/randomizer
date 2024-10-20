@@ -1,29 +1,49 @@
 {
-  "name": "randomizer",
-  "displayName": "randomizer",
-  "description": "generador de informacion falsa para proyectos de programacion",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/EverGasterXd/randomizer.git"},
-  "version": "0.0.2",
-  "engines": {
-    "vscode": "^1.94.0"
-  },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": ["onCommand:extension.generar"],
-  "main": "./extension.js",
-  "contributes": {
-    "commands": [{
-      "command": "randomizer.helloWorld",
-      "title": "Hello World"
+    "name": "randomizerFakeData",
+    "displayName": "randomizerFakeData",
+    "description": "generador de informacion falsa para proyectos de programacion",
+    "version": "0.0.3",
+    "publisher": "EverGasterXd",
+    "license": "MIT",
+    "icon": "icon.png",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/EverGasterXd/randomizer.git"
     },
-    {
-      "command": "extension.generar",
-      "title": "Generar Persona"
-    }]
-  },
+    "engines": {
+      "vscode": "^1.94.0",
+      "node": "^14.0.0"
+    },
+    "categories": [
+      "Other"
+    ],
+    "keywords": ["random", "fake data", "generator", "development"],
+    "author": {
+      "name": "Tu Nombre",
+      "email": "tu@email.com"
+    },
+    "galleryBanner": {
+      "color": "#C80000",
+      "theme": "dark"
+    },
+    "homepage": "https://github.com/EverGasterXd/randomizer/blob/main/README.md",
+    "bugs": {
+      "url": "https://github.com/EverGasterXd/randomizer/issues"
+    },
+    "activationEvents": ["onCommand:extension.generar"],
+    "main": "./extension.js",
+    "contributes": {
+      "commands": [
+        {
+          "command": "randomizer.helloWorld",
+          "title": "Hello World"
+        },
+        {
+          "command": "extension.generar",
+          "title": "Generar Persona"
+        }
+      ]
+    },
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
