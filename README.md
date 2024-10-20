@@ -44,12 +44,8 @@ Actualmente no hay problemas conocidos. Si encuentras alguno, por favor repórta
 Las contribuciones son bienvenidas! Por favor, lee [CONTRIBUTING.md](CONTRIBUTING.md) para detalles sobre nuestro código de conducta y el proceso para enviarnos pull requests.
 
 ## Licencia
-
 Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.md) para detalles.
 
-## Contacto
-
-Si tienes alguna pregunta o sugerencia, no dudes en contactarme en [tu-email@ejemplo.com](mailto:tu-email@ejemplo.com).
 
 ---
 

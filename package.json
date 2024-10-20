@@ -2,6 +2,9 @@
   "name": "randomizer",
   "displayName": "randomizer",
   "description": "generador de informacion falsa para proyectos de programacion",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EverGasterXd/randomizer.git"},
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.94.0"
