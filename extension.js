@@ -42,7 +42,7 @@ function activate(context) {
       persona.correo = `${fake.internet.email({firstName: `${nombreParaCorreo}`})}`;
     }
     if (datosSolicitados.includes('año_nacimiento')) {
-      persona.año_nacimiento = fake.date.birthdate({ min: 1950, max: 2024, mode: 'year' });
+      persona.año_nacimiento = fake.date.birthdate({ min: 1950, max: 2024, mode: 'year'}).getFullYear();
     }
     if (datosSolicitados.includes('genero')) {
       persona.genero = fake.person.sex() === 'female' ? 'female' : 'male';
