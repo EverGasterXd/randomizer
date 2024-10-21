@@ -20,7 +20,7 @@ Esta extensión para Visual Studio Code genera datos personales ficticios para u
 2. Presiona `Ctrl+P` para abrir la paleta de comandos
 3. Pega el siguiente comando y presiona enter:
    ```
-   ext install tu-nombre-de-usuario.generador-datos-personales
+   ext install EverGasterXd.randomizerFakeData
    ```
 
 ## Uso
